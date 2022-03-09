@@ -11,6 +11,9 @@ exports.calculate = function(req, res) {
   });
 
   var operations = {
+    
+// using + operator to type caste variables as integers in order to prevent string concatenation
+    
     'add':      function(a,b) { return +a + +b },
     'subtract': function(a,b) { return a - b },
     'multiply': function(a,b) { return a * b },
